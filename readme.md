@@ -41,9 +41,9 @@ class Te(Te):
   def preparacion(sabor):
 
     return {
-			sabor == 1: "Preraración en 3 minutos, consumir al desayuno",
-			sabor == 2: "Preraración en 5 minutos, consumir al medio día",
-			sabor == 3: "Preraración en 6 minutos, consumir al atardecer"
+            sabor == 1: "Preraración en 3 minutos, consumir al desayuno",
+            sabor == 2: "Preraración en 5 minutos, consumir al medio día",
+            sabor == 3: "Preraración en 6 minutos, consumir al atardecer"
 		}.get(True, "Valor no válido")
 
 if __name__ == "__main__":
