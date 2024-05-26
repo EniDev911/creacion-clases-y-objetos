@@ -1,10 +1,8 @@
 class Te():
-	
-	sabor = ("Té negro","Té verde","Aguas de hierba")
-	
-	formato = ("300gr","500gr")
 
 	duracion = 365
+	sabor = ("Té negro","Té verde","Aguas de hierba")
+	formato = (300 ,500)
 	
 	@staticmethod
 	def obtener_precio(formato):
@@ -13,9 +11,9 @@ class Te():
 		2 = 500gr
 		"""
 		return {
-			formato == 1: "$3.000", 
-			formato == 2: "$5.000"
-		}.get(True, "Formato no válido")
+			formato == 1: 3000,
+			formato == 2: 5000
+		}.get(True, "Opción no válida")
 	
 	@staticmethod
 	def preparacion(sabor):
@@ -32,5 +30,5 @@ class Te():
 
 
 if __name__ == "__main__":
-	te = Te()
+	print(Te.obtener_precio(2))
 	print(Te.preparacion(1))
